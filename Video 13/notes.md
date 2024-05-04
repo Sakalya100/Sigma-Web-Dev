@@ -1,0 +1,1 @@
+Entities are used to write those that collide with the HTML syntax or elements
