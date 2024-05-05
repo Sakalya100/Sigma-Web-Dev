@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*Element selector*/
+        /*Drawback is it will target all the same elements*/
+        /* div{
+            background-color: red;
+        } */
+
+        /*Class selector*/
+        .red{
+            background-color: red;
+        }
+
+        /*Id selector*/
+        #green{
+            background-color: green;
+        }
+
+        /*Child selector*/
+        div > p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /*Descendent selector*/
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+
+        /*Universal selector*/
+        *{
+            margin: 0;
+            padding: 0
+        }
+
+        /*Pseudo selector*/
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: red
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        /*It targets those paragraph tags where the p is the first child of the parent tag*/
+        p:first-child{
+            background-color: yellow
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        I am a div
+        <p>I am a child para inside div</p>
+        <article>
+            <p>I am a descendent of div</p>
+        </article>
+    </div>
+    <div id="green">
+        I am not red div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook2.com">Go to facebook</a>
+</body>
+</html>
